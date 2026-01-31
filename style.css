@@ -6,6 +6,8 @@
 body{
     font-family: "SN Pro", sans-serif;
     background-image: url("/MyFirstWeb/Hack.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 nav{
@@ -17,9 +19,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 0 4rem;
-
-
-
 }
 
 .nav-opt{
@@ -44,3 +43,50 @@ ul li a:hover{
     color: aqua;
 
 }
+
+/*Card */
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    background-color: rgba(29, 29, 22, 0.336);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.card{
+    color: white;
+    background-color: #1413137a;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.562);
+    padding: 40px;
+    width: 700px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.card h2{
+   font-size: 30px; 
+   padding: 20px;
+}
+
+.card p{
+    font: 18px;
+    line-height: 1.8rem;
+}
+
+/* Media Querry is use to Responsivenase*/
+
+@media(max-width: 800px){.card{
+        width: 500px;
+    }}
+
+    @media(max-width: 466px){.card{
+        width: 200px;
+        padding: 45px;
+    }}
+   
