@@ -50,7 +50,17 @@ ul li a:hover{
 
 /*Card */
 
-
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
 .container::before{
     content: "";
     position: absolute;
